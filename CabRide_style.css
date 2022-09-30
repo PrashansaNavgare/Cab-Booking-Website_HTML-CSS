@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 10px;
+    width: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background: #090909;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(159, 159, 159);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;   
+}
+.main-container{
+    background: url(./background.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    color: black;
+    background: #ffffff;
+    padding: .4rem 1rem;
+    border-radius: 13px;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header .navbar a:hover{
+    color: black;
+    background: #f8b56d;
+    padding: .5rem 2rem;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#menu-bars{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+.navbar.active{
+    top: 10%;
+}
+.background-text h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.background-text h2 span{
+    color: #f8b56d;
+}
+.taxi-image{
+    width: 50%;
+    margin: 0 auto;
+}
+.taxi-image img{
+    width: 100%;
+    margin-top: 250px;
+}
+.home-container{
+    background: #f8b56d;
+    padding: 2rem 7%;
+    width: 100%;
+    padding-top: 4rem;
+
+}
+.home-content{
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.inner-content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.inner-content h3{
+    font-size: 31px;
+}
+.inner-content h2{
+    font-size: 38px;
+}
+.inner-content p{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    text-transform: none;
+}
+.inner-content .booknow{
+    padding: .9rem 2.5rem;
+    color: #f8b56d;
+    font-size: 1.7rem;
+    background-color: black;
+    border: none;
+    border-radius: 17px;
+}
+.inner-content .booknow:hover{
+    color: black;
+    padding: 1.2rem 3rem;
+    border: 1px solid white;
+    background: white;
+}
+.form-heading{
+    background: black;
+    border-radius: 5px;
+    padding: 1.8rem 0;
+}
+.form-heading h1{
+    color: white;
+}
+.contact-form{
+    width: 45rem;
+    background: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.form-fields input{
+    padding: 2rem;
+    border: none;
+    border-bottom: 1.5px solid black;
+}
+.contact-form a{
+    background: black;
+    width: 100%;
+    display: inline-block;
+    padding: 0.9rem 0;
+    color: white;
+    font-size: 1.7rem;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 5px;
+}
+.search-cabs{
+    padding-top: 2rem;
+}
+
+.fast-booking{
+    background: url(./secbg.png);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    padding-bottom: 5rem;
+}
+.fast-booking .fast-heading{
+    padding-top: 3rem;
+    color: #f8b56d;
+    font-size: 38px;
+    text-align: center;
+}
+.fast-booking h2{
+    font-size: 31px;
+    color: white;
+    text-align: center;
+}
+.inner-fast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem 7%;
+}
+.booking-content{
+    flex: 1 1 45rem;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.inner-fast-text h1{
+    font-size: 22px;
+    color: #f8b56d;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.inner-fast-text p{
+    font-size: 18px;
+    text-transform: none;
+    padding: 2rem;
+}
+.icon-fast{
+    background-color: #f8b56d;
+    width: 70px;
+    height: 40px;
+    border-radius: 150px;
+    text-align: center;
+}
+.icon-fast span i{
+    color: black;
+    line-height: 40px;
+    font-size: 2rem;
+}
+
+.main-tariff{
+    padding: 3rem 7%;
+}
+.main-tariff h1{
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 7rem;
+}
+.main-tariff h1 span{
+    color: #f99f3f;
+}
+.inner-tariff{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.tariff-container{
+    text-align: center;
+    flex: 1 1 250px;
+    padding: 3rem 0;
+}
+.tariff-container img{
+    margin-top: -65px;
+}
+.inner-box1{
+    margin-top: 6.3rem;
+}
+.inner-box3{
+    margin-top: 3.5rem;
+}
+.inner-box1 img{
+    margin-bottom: 2rem;
+}
+.tariff-container h2{
+    font-size: 30px;
+}
+.tariff-container p{
+    text-transform: none;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.tariff-container h3{
+    text-transform: none;
+    color: #d87904;
+    font-size: 1.8rem;
+}
+.tariff-container a{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    color: #fac791;
+    background: black;
+    display: inline-block;
+    border: none;
+    border-radius: 17px;
+    margin-top: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.yellow-section{
+    color: #ba6804 !important;
+}
+.tariff-container:nth-child(2){
+    background: #f8b56d;
+}
+.some-faqs{
+    background: url(faq-back.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 4rem;
+}
+.some-faqs h1{
+    color: #f8b56d;
+    font-size: 33px;
+    padding: 2rem;
+    text-align: center;
+}
+.some-faqs h2{
+    font-size: 17px;
+    color: #f8b56d;
+    padding: 0 1rem;
+}
+.some-faqs p{
+    font-size: 15px;
+    text-transform: none;
+    padding: 1.5rem;
+}
+.main-faqs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 2rem 4%;
+
+}
+.faqs{
+    background: black;
+    flex: 1 1 45rem;
+    color: white;
+    padding: 2rem;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    #menu-bars{
+        display: initial;
+    
+    }
+    .navbar{
+        position: absolute;
+        top: -100%;
+        right: 0;
+        left: 0;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        background: #f8b56d;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+    .header{
+        padding: 2rem;
+    }
+    .tarrif-container{
+        padding-bottom: 4rem;
+    }
+    .tarrif-container img{
+        width: 60%;
+        margin-top: 0px;
+    }
+    .background-text h2{
+        width: 100%;
+        text-align: center;
+    }
+}
